@@ -349,3 +349,62 @@ console.log((2.7).toFixed(3)); //2.700
 console.log((2.345).toFixed(2)); //2.35
 console.log(+(2.345).toFixed(3)); //CONVERT TO A NUMBER
 */
+
+/////////////////////////////////////////////////
+// REMAINDER OPERATOR
+
+/*
+REMAINDER THINGS
+EVERY NTH TIME
+*/
+
+/*
+console.log(5 % 2); // 1
+console.log(5 / 2); // 5 = 2 * 2 + 1
+console.log(8 % 3); //2 
+console.log(6 % 2); //0
+console.log(7 % 2); //1
+
+const isEven = n => n % 2 === 0;
+console.log(isEven(8)); //TRUE
+console.log(isEven(23)); //FALSE
+console.log(isEven(1)); //FALSE
+
+//EVERY NTH TIME 
+// labelBalance.addEventListener(`click`, function(){
+//   [...document.querySelectorAll(`.movements__row`)].forEach(function(row, i){
+//     if (i % 2 === 0) row.style.backgroundColor = `orangeRed`;
+//     if(i % 3 === 0) row.style.backgroundColor = `blue`;
+//   })
+// })
+*/
+
+/////////////////////////////////////////////////
+// BIG INT
+
+/*
+console.log(2 ** 53 - 1); //BIGGEST INTEGER THAT CAN BE ACCURATELY INTERPRETED
+console.log(Number.MAX_SAFE_INTEGER); //ANY NUMBER BIGGER THAN THIS CAN FUCK UP
+
+console.log(8917345698734658792346589726345);
+console.log(8917345698734658792346589726345n); //MAKES IT INTO A BIG INT, WILL DISPLAY ACCURATELY
+console.log(BigInt(89173456987346)); //SHOULD BE USED FOR SMALLER NUMBERS
+
+//OPERATIONS
+//DONT MIX BIG INTS AND OTHER TYPES
+//Math.operations WILL NOT WORK
+console.log(100000n + 100000n); //OPERATORS WORK THE SAME WITH BIG INT
+console.log(8917345698734658792346589726345n * 8917345698734658792346589726345n);
+const num = 23;
+console.log(8917345698734658792346589726345n + BigInt(num));
+
+console.log(20n > 15); //WILL STILL WORK
+console.log(20n === 20); //FALSE
+console.log(typeof 20n); //bigint
+console.log(20n == 20);
+console.log(8917345698734658792346589726345n + ` is huge`); //WILL WORK
+
+//DIVISIONS
+console.log(10n / 3n); //3n CUTS OFF THE DECIMALS
+*/
+
