@@ -408,3 +408,38 @@ console.log(8917345698734658792346589726345n + ` is huge`); //WILL WORK
 console.log(10n / 3n); //3n CUTS OFF THE DECIMALS
 */
 
+/////////////////////////////////////////////////
+//CREATING DATES AND TIMERS
+
+// //CREATING A DATE
+// const now = new Date(); //RELIABLE 
+// console.log(now); //WILL SHOW THE CURRENT DATE AND TIME 
+
+// console.log(new Date(`Dec 17 2020 00:30:43`));
+// console.log(new Date(`December 24, 2020`));
+
+// console.log(new Date(account1.movementsDates[0])); 
+
+// console.log(new Date(2037, 10, 19, 15, 23, 5)); //MONTH IS ZERO BASED SO 10 IS ACTUALLU NOV
+// console.log(new Date(2037, 10, 31, 15, 23, 5)); //WILL AUTOCORRECT TO DECEMBER 1ST
+
+// console.log(new Date(0)) //INITIAL UNIX TIME JANUARY 1ST 1970
+// console.log(new Date(3 * 24 * 60 * 60 * 1000)); 
+
+//WORKING WITH DATES
+const future = new Date(2037, 10, 19, 15, 23);
+console.log(future); 
+console.log(future.getFullYear()); // 2037
+console.log(future.getMonth()); // 10
+console.log(future.getDate()); // 19
+console.log(future.getDay()); // 4
+console.log(future.getHours()); //15
+console.log(future.getMinutes()); //23
+console.log(future.getSeconds()); //0
+console.log(future.toISOString()); //CONVERT TO STRING
+console.log(future.getTime()); //CREATE A TIME STAMP
+console.log(new Date(2142285780000)) //REVERSE THE TIME STAMP INTO AN ACTUAL DATE
+console.log(Date.now()); //GIVES YOU THE TIME STAMP OF NOW
+
+future.setFullYear(2040); //HOW TO CHANGE THE SET DATE
+console.log(future); 
